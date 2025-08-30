@@ -21,149 +21,119 @@ interface ExperienceItem {
 }
 
 const experiences: ExperienceItem[] = [
-  // {
-  //   position: 'Software Engineer',
-  //   company: 'Novostack',
-  //   period: 'June 2025 - Present',
-  //   location: 'Noida, India',
-  //   description: [
-  //     'Collaborated with cross-functional teams to build the HelloTrade platform, a B2B e-commerce platform for credit score by IndiaMART',
-  //     'Engineered high-performance PDF converter using Puppter.js achieving 20% increase in processing speed.',
-  //     'Innovated comprehensive Analytic Dashboard for tracking user behavior and performance metrics.',
-  //     'Containerized application using Docker for consistent deployment across environments.',
-  //   ],
-  //   skills: [
-  //     'Next.js',
-  //     'Nest.js',
-  //     'React',
-  //     'TypeScript',
-  //     'PostgreSQL',
-  //     'Shadcn UI',
-  //     'Puppeteer',
-  //     'Redis',
-  //   ],
-  //   images: ['/caresept.png'],
-  // },
   {
-    position: 'Software Engineer',
+    position: 'Software Engineer (Part-time)',
     company: 'Cynos Nexus',
-    period: 'Jan 2025 - May 2025',
+    period: 'Jan 2025 – May 2025',
     location: 'Noida, India',
     description: [
-      'Developed core features of an AI-powered real estate ecosystem using Next.js 15, Nest.js 11, Prisma, PostgreSQL, Apollo GraphQL, Redis, Google Cloud & AWS.',
-      'Implemented the AI knowledge base service, using FastAPI, Pinecone, Langchain, Hugging Face & DeepSeek AI.',
+      'Collaborated to develop core features of an AI-powered real estate ecosystem using Next.js, Nest.js, Prisma, PostgreSQL, Apollo GraphQL, Redis, Google Cloud & AWS.',
+      'As part of a 4-person team, developed core features that helped acquire 20 clients in 2 months, contributing to ₹100K in new MRR.',
+      'Partnered to implement the AI knowledge base service, using FastAPI, Langchain & OpenAI.',
+      'Fortified with enterprise-grade RBAC authentication using JWT and HTTP-only cookies.',
+      'Automated deployment infrastructure using Docker, GitHub Actions for CI/CD, and Nginx for reverse proxy/load balancing.',
+      'Engineered WhatsApp, Meta & Google Ads with DeepSeek AI to auto-optimise ad campaigns.',
+      'Implemented Google Cloud Vision API, XLSX & BullMQ to help users seed their client database in the app by scanning their contact diaries with their smartphone camera or using the Microsoft Excel import.',
+      'Integrated Razorpay for automated payment processing, achieving a high (>95%) transaction success rate.',
+      'Implemented real-time notifications using GraphQL subscriptions (WebSockets), PubSub & Firebase Cloud Messaging.',
+      'Engineered secure AWS S3 file uploads using multi-part uploads to reliably handle large files (up to 5GB), ensuring data integrity.',
+      'Integrated AWS SES and Resend for transactional emails and targeted marketing campaigns, improving delivery rates by 15%.',
       'Implemented Incremental Site Regeneration with on-demand rendering & dynamic caching, achieving 221ms load time.',
-      'Automated deployment infrastructure using Docker, GitHub Actions for CICD, and Nginx for reverse proxy/load balancing',
-      'Engineered WhatsApp, Meta, Email Marketing & Google Ads with DeepSeek AI to auto-optimise ad campaigns.',
-      'Implemented Google Cloud Vision API & XLSX to help users seed their client database in the app by scanning their contact diaries with their smartphone camera or using the Microsoft Excel import.',
-      'Integrated Razorpay for automated payment processing, enabling seamless subscription payments.',
-      'Implemented real-time notifications using the GraphQL subscriptions (WebSockets) & Firebase Cloud Messaging.'
+      'Reduced Largest Contentful Paint (LCP) from 2.4s to 0.9s using Next.js streaming SSR & Edge Runtime.',
+      'Integrated Turbopack for faster local dev builds, cutting hot reload time by 40%.'
+
     ],
     skills: [
       'Next.js',
       'Nest.js',
       'Prisma',
-      'Redis',
-      'Apollo GraphQL',
-      'Google Cloud',
-      'Vercel',
-      'React',
-      'TypeScript',
       'PostgreSQL',
-      'Progressive Web App',
+      'Apollo GraphQL',
       'Redis',
-      'Incremental Static Regeneration',
-      'dynamic caching',
-      'Nginx',
+      'Google Cloud',
+      'AWS',
+      'FastAPI',
+      'JWT',
+      'Docker',
+      'GitHub Actions',
       'CI/CD',
-      'Vision API',
-      'XLSX',
-      'SEO',
-      'JSON-LD schema',
+      'Nginx',
       'BullMQ',
-      'Webhooks',
-      'RBAC',
-      'WhatsApp Business API',
-      'Meta Marketing API',
-      'DeepSeek AI',
-      'Firebase Cloud Messaging'
+      'Razorpay',
+      'WebSockets',
+      'PubSub',
+      'Firebase Cloud Messaging',
     ],
-    images: ['/caresept.png'],
+    images: ['/cynos.png'],
   },
   {
-    position: 'Software Engineer',
+    position: 'Contract Software Engineer',
     company: 'Caresept',
-    period: 'Sept 2024 - Dec 2024',
-    location: 'Istanbul, Turkey',
+    period: 'Sept 2024 – Dec 2024',
+    location: 'Remote, Turkiye',
     description: [
-      'Collaborated with cross-functional teams to integrate OAuth in FastAPI, improving user onboarding & UX by 20%.',
-      'Engineered high-performance Rich Document Editor using WeasyPrint, Tiptap, MUI in Next.js, achieving a 30% increase in user engagement metrics.',
+      'Collaborated with cross-functional teams to integrate OAuth in FastAPI, improving user onboarding by 20%.',
+      'Engineered a high-performance PDF generator using WeasyPrint, converting the dynamic JSON reports to high-quality PDFs.',
       'Optimised data processing via bulk CSV upload & processing using Celery worker, reducing processing time by 40%.',
-      'Established a CICD pipeline with GitHub Actions and Docker on an AWS EC2 machine.',
-      'Led Progressive Web App implementation, ensuring cross-platform accessibility and offline functionality',
-      'Executed strategic SEO optimisations like JSON-LD schema markup data, Open Graph tags, and dynamic meta tags, resulting in a 45% improvement in organic traffic and search rankings.',
-      'Innovated comprehensive Event & Calendar Management System enhancing user scheduling efficiency by 25%.'
+      'Established a CI/CD pipeline with GitHub Actions and Docker on an AWS EC2 machine.',
+      'Collaborated to build a LangChain and pgvector knowledge base, improving ML model query accuracy by 15%.',
+      'Led Progressive Web App (PWA) transformation, enabling offline-first usage and cross-platform support, improving adoption.',
+      'Championed responsive design and accessibility improvements, achieving WCAG 2.1 compliance and 98 Lighthouse score.',
+      'Executed strategic SEO optimisations like JSON-LD schema markup data, Open Graph tags, and dynamic meta tags.'
     ],
     skills: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'PostgreSQL',
-      'MUI',
-      'Tiptap',
       'FastAPI',
-      'Celery',
-      'csv-parser',
-      'MailGun',
-      'Progressive Web App',
-      'Redis',
+      'OAuth',
       'WeasyPrint',
+      'Celery',
+      'CSV processing',
+      'GitHub Actions',
+      'Docker',
+      'AWS EC2',
+      'LangChain',
+      'pgvector'
     ],
-    images: ['/caresept.png'],
+    images: ['/caresept.webp'],
   },
   {
-    position: 'Open Source Contributor',
+    position: 'Open-source Contributor',
     company: 'NextUI',
-    period: 'June 2024 - Aug 2024',
-    location: 'Remote',
+    period: 'June 2024 – Aug 2024',
+    location: 'Y Combinator S24 start-up',
     description: [
       'Achieved a personal offer from the CEO to join NextUI after making significant contributions (35 pull requests).',
-      'User Experience Enhancement: Resolved 10+ bugs in essential components like Calendar, Table and Pagination, leading to directly improving the product’s stability and usability.',
-      'Enhanced Developer Adoption & Product Reach: Delivered 7+ feature enhancements that significantly improved component flexibility and extensibility.',
-      'Contributed to enterprise-grade reusable UI components used by 1000+ developers globally',
+      'User Experience Enhancement: Resolved 10+ bugs in essential components like Calendar, Table, and Pagination, leading to direct improvement of the product\'s stability and usability.',
+      'Delivered 7+ feature enhancements that improved component flexibility and extensibility of enterprise-grade reusable UI components.'
     ],
     skills: [
-      'Next.js',
       'React',
       'TypeScript',
-      'Storybook',
+      'Next.js',
       'React-Aria',
+      'Storybook',
       'Jest',
-      'React Testing Library',
+      'React Testing Library'
     ],
     images: ['/placeholder.svg?height=300&width=400', '/placeholder.svg?height=300&width=400'],
     proofLink: '/nextui',
   },
   {
-    position: 'Software Development Intern',
-    company: 'SkilledUp Intelligence Pvt. Ltd.',
-    period: 'Feb 2024 - May 2024',
-    location: 'Bangalore, India',
+    position: 'SWE Intern',
+    company: 'SkilledUp',
+    period: 'Feb 2024 – May 2024',
+    location: 'Noida',
     description: [
-      'Engineered core features of the enterprise Learning Management System serving 500+ users.',
-      'Implemented a secure authentication system using JWT and NextAuth.js, achieving zero security incidents',
-      'Developed a Query Engine based on MongoDB and Express, handling ~10,000 daily queries.',
+      'Engineered the backend application of the enterprise Learning Management System serving 500+ users.',
+      'Developed JWT and OAuth 2.0 authentication, securing 400+ user accounts with almost zero breaches.',
+      'Developed a backend service based on MySQL and Django Rest Framework(DRF), handling ~5000 daily queries.'
     ],
     skills: [
-      'Next.js',
-      'TypeScript',
-      'JavaScript',
-      'MongoDB',
-      'Node.js',
-      'Express.js',
+      'Django Rest Framework',
+      'MySQL',
       'JWT',
-      'NextAuth.js',
-      'Docker',
+      'OAuth 2.0',
+      'Python',
+      'Backend Development'
     ],
     images: ['/placeholder.svg?height=300&width=400', '/placeholder.svg?height=300&width=400'],
   },
@@ -195,7 +165,7 @@ const Experience: React.FC = () => {
             Professional Experiences
           </h2>
           <p className="mt-4 text-xl text-gray-600 dark:text-gray-300">
-            Specialized in CRM Development and Modern Web Applications
+            Specialized in development of ML powered applications.
           </p>
         </motion.div>
 
@@ -364,31 +334,6 @@ const TimelineItem: React.FC<{
                 })}
               </ul>
             </div>
-
-            {/* <div>
-              <h4 className="font-semibold mb-3 text-gray-800 dark:text-gray-200">
-                Technologies Used:
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {experience.skills.map((skill, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: i * 0.05 }}
-                  >
-                    <Badge
-                      variant="secondary"
-                      className="bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 hover:from-blue-100 hover:to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30 dark:text-blue-300 dark:hover:from-blue-900/50 dark:hover:to-blue-800/50 transition-all duration-300 transform hover:scale-105 cursor-default"
-                    >
-                      {skill}
-                    </Badge>
-                  </motion.div>
-                ))}
-              </div>
-            </div> */}
-
-            {/* <Carousel images={experience.images} /> */}
           </div>
         </CardContent>
       </Card>
