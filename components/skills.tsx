@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Layout, Server, Database, Cloud } from 'lucide-react';
+import { Layout, Server, Database, Cloud, Brain } from 'lucide-react';
 
 // Add your tech icons/images to the public/skills directory
 const skillCategories = [
@@ -53,7 +53,7 @@ const skillCategories = [
         experience: '1.5 years',
         details:
           'Async IO optimization, WebSocket implementations, Custom middleware architecture, OpenAPI integration, Advanced dependency injection patterns, High-performance data streaming.',
-        projects: 'Real-time Analytics, IoT Platforms',
+        projects: 'Real-time Analytics, MLOps, MLflow',
         icon: '/skills/fastapi.svg',
       },
       
@@ -120,6 +120,36 @@ const skillCategories = [
       },
     ],
   },
+  {
+    title: 'AI & Machine Learning',
+    icon: <Brain className="w-6 h-6" />,
+    skills: [
+      {
+        name: 'LangChain',
+        level: 'Expert',
+        experience: '1 year',
+        details: 'LangChain, LangGraph, LangChain-Community',
+        projects: 'Machine Learning',
+        icon: '/skills/langchain.png',
+      },
+      {
+        name: 'Hugging Face',
+        level: 'Expert',
+        experience: '1 year',
+        details: 'Transformers, Tokenizers, Pipelines',
+        projects: 'Machine Learning',
+        icon: '/skills/hugging.png',
+      },
+      {
+        name: 'Vector Database',
+        level: 'Expert',
+        experience: '1 year',
+        details: 'Pinecone, pgvector',
+        projects: 'Machine Learning',
+        icon: '/skills/pinecone.webp',
+      }
+    ],
+  }
 ];
 
 const SkillCard = ({ skill }: { skill: any }) => {
@@ -150,32 +180,16 @@ const SkillCard = ({ skill }: { skill: any }) => {
               <h4 className="font-semibold text-lg text-gray-800 dark:text-gray-200">
                 {skill.name}
               </h4>
-              <Badge
-                className={
-                  skill.level === 'Expert'
-                    ? 'bg-gradient-to-r from-primary to-primary/80 text-white'
-                    : 'bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-200'
-                }
-              >
-                {skill.level}
-              </Badge>
+      
             </div>
 
-            <motion.p
-              initial={{ height: 20, opacity: 0.7 }}
-              animate={{ height: isHovered ? 'auto' : 20, opacity: isHovered ? 1 : 0.7 }}
-              className="text-sm text-gray-700 dark:text-gray-300 mb-2 overflow-hidden"
-            >
+              <p className='text-sm text-gray-700 dark:text-gray-300'>
               {skill.details}
-            </motion.p>
+              </p>
+  
 
             <div className="flex flex-wrap gap-2 mt-2">
-              <Badge
-                variant="outline"
-                className="border-primary/30 text-primary dark:border-primary/50 dark:text-primary/80"
-              >
-                {skill.experience}
-              </Badge>
+             
               {skill.projects.split(', ').map((project: string) => (
                 <Badge
                   key={project}
