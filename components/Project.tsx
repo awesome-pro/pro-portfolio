@@ -43,6 +43,36 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'ShortUrl - Shorten URLs in Your way',
+    type: 'fullstack',
+    description: [
+      'Built a URL Shortener powered by FastAPI, Redis, PostgreSQL, Google Cloud Run, Next.js and Docker.',
+      'Automated deployment infrastructure using Docker and Google Cloud Run for automated CI/CD',
+      'Implement enterprise-grade authentication using JWT and state management using Zustand',
+      'Engineered leaderboard feature based on the number of redirections via the shortened URLs.'
+    ],
+    techStack: [
+      'FastAPI',
+      'Next.js',
+      'Redis',
+      'PostgreSQL',
+      'Docker',
+      'Google Cloud',
+      'CI/CD',
+      'hashing',
+      'Zustand',
+      'JWT'
+    ],
+    images: [
+      { url: '/projects/url-1.png', alt: 'CRM Dashboard' },
+      { url: '/projects/url-2.png', alt: 'Analytics View' },
+      { url: '/projects/url-3.png', alt: 'Analytics View' },
+    ],
+    githubLink: 'https://github.com/awesome-pro/url-shortener-frontend',
+    previewLink: 'http://shortenurl.abhinandan.pro/',
+    highlights: ['Custom URL shortening', '50ms Average Response Time'],
+  },
+  {
     title: 'UPSCprep - UPSC Exam Preparation Platform',
     type: 'fullstack',
     description: [
