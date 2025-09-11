@@ -24,7 +24,7 @@ const experiences: ExperienceItem[] = [
   {
     position: 'Software Engineer (Part-time)',
     company: 'Cynos Nexus',
-    period: 'Jan 2025 – May 2025',
+    period: 'Jan 2025 – July 2025',
     location: 'Noida, India',
     description: [
       'Collaborated to develop core features of an AI-powered real estate ecosystem using Next.js, Nest.js, Prisma, PostgreSQL, Apollo GraphQL, Redis, Google Cloud & AWS.',
