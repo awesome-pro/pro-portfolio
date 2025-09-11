@@ -98,7 +98,7 @@ const Hero = () => {
                 }
               >
                 <span className="flex items-center">
-                  Let&apos;s Build Together
+                  Let&apos;s Have a Talk
                   <motion.span
                     className="ml-2"
                     initial={{ x: 0 }}
@@ -121,12 +121,12 @@ const Hero = () => {
                 asChild
               >
                 <Link
-                  href="https://cal.com/awesome_v0/15min"
+                  href="https://shorturl.abhinandan.pro/resume?ref=abhinandanpro"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"
                 >
-                  Schedule a Call
+                  Check My Resume
                   <motion.span
                     className="ml-2"
                     whileHover={{ rotate: 45 }}

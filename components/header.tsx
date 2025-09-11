@@ -102,6 +102,9 @@ const Header = () => {
             <div className="hidden md:flex items-center space-x-8">
               <NavLinks />
               <ThemeToggle theme={theme} setTheme={setTheme} />
+              <Link href="https://github.com/awesome-pro/pro-portfolio" target="_blank" className="relative z-[60]">
+                <FaGithub className="h-5 w-5 text-gray-800 dark:text-gray-200" />
+              </Link>
             </div>
 
             {/* Mobile Navigation Toggle */}

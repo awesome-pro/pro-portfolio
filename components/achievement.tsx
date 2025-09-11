@@ -71,12 +71,7 @@ const Achievements = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent dark:from-black/40" />
                     
                     {/* Premium badge overlay on image */}
-                    <div className="absolute top-3 left-3">
-                      <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-600/90 dark:bg-blue-700/90 backdrop-blur-sm text-white text-xs font-medium rounded-full shadow-lg">
-                        <Award className="w-3 h-3" />
-                        {achievement.badge}
-                      </div>
-                    </div>
+                    
                   </div>
                   <div className="space-y-4 mb-5">
                     <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 text-center bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent">
