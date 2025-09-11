@@ -113,7 +113,7 @@ const Achievements = () => {
             {[
               { title: "Amazon ML Summer School 2025", image: "/images/amazon.webp" },
               { title: "2nd Winner in Outlier AI Hackathon", image: "/images/outlier.webp" },
-              { title: "Reliance Foundation Scholar", image: "/images/rf.webp" },
+              { title: "Reliance Foundation Scholar", image: "/images/reliance.webp" },
               { title: "IYMC – Gold Honour", image: "/images/iymc.webp" },
               { title: "HDFC Badhate Kadam Scholar", image: "/images/hdfc.webp" }
             ].map((item, index) => (

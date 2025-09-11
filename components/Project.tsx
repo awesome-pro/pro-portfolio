@@ -248,24 +248,6 @@ const ProjectsSection = () => {
           </p>
         </motion.div>
 
-        {/* Animated Filter Buttons */}
-        {/* <div className="flex justify-center gap-4 mb-12">
-          {['fullstack'].map(type => (
-            <motion.button
-              key={type}
-              onClick={() => setFilter(type as typeof filter)}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all relative ${
-                filter === type
-                  ? 'text-white'
-                  : 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'
-              } ${filter === type ? 'bg-gradient-to-r from-blue-600 to-blue-400' : ''}`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {type.charAt(0).toUpperCase() + type.slice(1)}
-            </motion.button>
-          ))}
-        </div> */}
 
         {/* Projects Grid */}
         <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -373,13 +355,13 @@ const FullStackCard: React.FC<{ project: Project }> = ({ project }) => {
         </div>
       </CardContent>
 
-      <CardFooter className="flex justify-between  bg-gray-50 dark:bg-gray-700 p-5">
+      <CardFooter className="flex flex-col gap-3 md:flex-row md:justify-between  bg-gray-50 dark:bg-gray-700 p-4 items-start md:items-center">
         {project.githubLink &&           
             <Link
               href={project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+              className="flex gap-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
             >
               <FaGithub className="h-5 w-5" />
               <span>Frontend Repository</span>
@@ -398,7 +380,7 @@ const FullStackCard: React.FC<{ project: Project }> = ({ project }) => {
           </Link>
         )}
       </CardFooter>
-      <CardFooter className="flex justify-between  bg-gray-50 dark:bg-gray-700">
+      <CardFooter className="flex flex-col gap-3 md:flex-row md:justify-between  bg-gray-50 dark:bg-gray-700 p-3 items-start md:items-center">
         {project.backendLink &&           
             <Link
               href={project.backendLink}
