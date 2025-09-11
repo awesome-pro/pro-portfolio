@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FaGithub } from 'react-icons/fa';
 
 const Header = () => {
   const { setTheme, theme } = useTheme();
@@ -108,6 +109,9 @@ const Header = () => {
               <div className="relative z-[60]">
                 <ThemeToggle theme={theme} setTheme={setTheme} />
               </div>
+              <Link href="https://github.com/awesome-pro/pro-portfolio" target="_blank" className="relative z-[60]">
+                <FaGithub className="h-5 w-5 text-gray-800 dark:text-gray-200" />
+              </Link>
               <Button
                 variant="ghost"
                 size="icon"
@@ -150,8 +154,8 @@ const NavLinks = ({ mobile, onClick }: { mobile?: boolean; onClick?: () => void 
   const links = [
     { href: '#hero', label: 'About' },
     { href: '#experience', label: 'Experience' },
-    { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
+    { href: '#skills', label: 'Skills' },
     { href: '#contact', label: 'Contact' },
   ];
 

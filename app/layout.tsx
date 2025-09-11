@@ -23,14 +23,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://abhinandan.pro'),
   title: {
-    default: 'Abhinandan | Enterpreneur & Tech Expert',
-    template: '%s | Abhinandan - Enterpreneur & Tech Expert',
+    default: 'Abhinandan | Machine Learning Engineer',
+    template: '%s | Abhinandan - Machine Learning Engineer',
   },
   description:
-    'Enterpreneur & ML Engineer specializing in Next.js, FastAPI, Kubernetes, and Cloud Infrastructure. Expert in building scalable enterprise applications, CRM systems, and high-performance web solutions. Available for technical consulting and enterprise projects.',
+    'Machine Learning Engineer & Enterpreneur specializing in FastAPI, Kubernetes, Next.js, Node.js, and Cloud Infrastructure. Expert in building scalable enterprise applications, CRM systems, and high-performance web solutions. Available for technical consulting and enterprise projects.',
   keywords: [
     'Enterpreneur',
-    'ML Engineer',
+    'Machine Learning Engineer',
+    'Software Engineer',
     'Senior Software Engineer',
     'Full Stack Developer',
     'Next.js Expert',
@@ -78,7 +79,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://abhinandan.pro',
-    title: 'Abhinandan - Senior Software Engineer & Tech Expert',
+    title: 'Abhinandan - Machine Learning Engineer & Enterpreneur',
     description:
       'Expert Full Stack Engineer specializing in Next.js, FastAPI, and enterprise solutions. Building scalable, high-performance web applications and providing technical leadership.',
     siteName: 'Abhinandan Portfolio',

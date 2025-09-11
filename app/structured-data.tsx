@@ -11,11 +11,11 @@ export default function StructuredData() {
       'https://twitter.com/awesome_v0',
       'mailto:abhinadnanverma551@gmail.com',
     ],
-    jobTitle: ['Senior Software Engineer', 'Full Stack Developer', 'Technical Architect'],
+    jobTitle: ['Senior Software Engineer', 'Machine Learning Engineer', 'Technical Architect'],
     worksFor: {
       '@type': 'Organization',
       name: 'Independent Consultant',
-      description: 'Providing expert software development and technical consulting services',
+      description: 'Providing expert software development, machine learning, and technical consulting services',
     },
     alumniOf: {
       '@type': 'Organization',
@@ -40,12 +40,12 @@ export default function StructuredData() {
       'Performance Optimization',
       'Scalable Web Applications',
     ],
-    description: `Senior Software Engineer and Tech Expert specializing in Next.js, FastAPI, and Cloud Infrastructure. 
+    description: `Machine Learning Engineer & Enterpreneur specializing in Next.js, FastAPI, and Cloud Infrastructure. 
     Proven track record in building scalable enterprise applications, CRM systems, and high-performance web solutions. 
     Expert in modern web technologies, system design, and technical architecture.`,
     hasOccupation: {
       '@type': 'Occupation',
-      name: 'Senior Software Engineer',
+      name: 'Machine Learning Engineer',
       occupationLocation: { '@type': 'Country', name: 'Worldwide' },
       description: 'Expert in full-stack development, system design, and enterprise solutions',
       skills: 'Next.js, FastAPI, React, TypeScript, Cloud Architecture, System Design',

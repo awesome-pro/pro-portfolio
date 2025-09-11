@@ -1,3 +1,4 @@
+import Achievements from '@/components/achievement';
 import Contact from '@/components/Contact';
 import Experience from '@/components/Experience';
 import Hero from '@/components/hero';
@@ -10,9 +11,10 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Achievements />
       <Experience />
-      <SkillsSection />
       <ProjectsSection />
+      <SkillsSection />
       <Contact />
       <Portfolio />
     </main>
