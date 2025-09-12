@@ -44,7 +44,7 @@ const projects: Project[] = [
     title: 'ShortUrl - Shorten URLs in Your way',
     type: 'fullstack',
     description: [
-      'Engineered a high-throughput URL shortener on Google Cloud Run, achieving a P99 latency of <50ms for redirections by leveraging Redis.',
+      'Engineered a high-throughput URL shortener on Google Cloud Run, achieving a P99 latency of <200ms for redirections by leveraging Redis.',
       'Automated deployment infrastructure using Docker and Google Cloud Run for automated CI/CD',
       'Secured endpoints using JWTs with short-lived access tokens and refresh tokens, providing a seamless and secure UX via Google OAuth.'
     ],

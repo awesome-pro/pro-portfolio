@@ -123,9 +123,9 @@ const experiences: ExperienceItem[] = [
     period: 'Feb 2024 – May 2024',
     location: 'Noida',
     description: [
-      'Engineered the backend application of the enterprise Learning Management System serving 500+ users.',
+      'Engineered the backend application of the enterprise Learning Management System serving 400+ users.',
       'Developed JWT and OAuth 2.0 authentication, securing 400+ user accounts with almost zero breaches.',
-      'Developed a backend service based on MySQL and Django Rest Framework(DRF), handling ~5000 daily queries.'
+      'Developed a backend service based on MySQL and Django Rest Framework(DRF), handling ~4000 daily queries.'
     ],
     skills: [
       'Django Rest Framework',
