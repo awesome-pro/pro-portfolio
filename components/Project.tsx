@@ -176,6 +176,9 @@ const projects: Project[] = [
     description: [
       'Developed a Image to Sketch Converter using Next.js, FastAPI, OpenCV, Numpy, and AWS S3',
       'Integrated boto3 for AWS S3 AES-256 encryption secured file upload and download',
+      'Setup CI/CD pipeline using Google Cloud Run & Docker for automated containerization',
+      'Implemented Error-handling mechanisms for API endpoints',
+      'Enginnerred the BackgroudTasks from FastAPI for image to sketch conversion to process the images in the background',
     ],
     techStack: [
       'Next.js',
@@ -203,9 +206,7 @@ const projects: Project[] = [
     type: 'fullstack',
     description: [
       'Developed a FastAPI framework for FastAPI to ship fast with FastAPI',
-      'Implemented SQLAlchemy for database operations, ensuring 99.9% uptime with Error-handling mechanisms',
-      'Utitlized Celery for background tasks, ensuring 99.9% uptime with Error-handling mechanisms',
-      'Setup CICD pipeline using GitHub Actions & Docker for containerization'
+      'Reducing the time to setup the FastAPI prpject from scratch, making it easier to ship fast with FastAPI',
       
     ],
     techStack: [
