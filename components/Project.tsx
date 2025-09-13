@@ -5,20 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, ChevronLeft, ChevronRight, ZapIcon } from 'lucide-react';
-import { FaDatabase, FaFilePdf, FaGithub, FaLock } from 'react-icons/fa';
+import { FaDatabase, FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from '@/components/ui/alert-dialog';
 
 interface ProjectImage {
   url: string;
@@ -83,14 +72,10 @@ const projects: Project[] = [
       'Prisma',
       'PostgreSQL',
       'Redis',
-      'AWS',
       'Docker',
       'CI/CD',
-      'Firebase',
       'Razorpay',
-      'Google Cloud Vision API',
-      'XLSX',
-      'Firebase Cloud Messaging',
+      'Google Cloud',
     ],
     images: [
       { url: '/projects/upsc-0.webp', alt: 'CRM Dashboard' },
@@ -113,17 +98,9 @@ const projects: Project[] = [
     techStack: [
       'Next.js',
       'Nest.js',
-      'Prisma',
       'PostgreSQL',
-      'Redis',
-      'AWS',
-      'Docker',
-      'CI/CD',
-      'Firebase',
-      'Razorpay',
-      'Google Cloud Vision API',
-      'XLSX',
-      'Firebase Cloud Messaging',
+      'AWS Marketplace',
+      'RBAC'
     ],
     images: [
       { url: '/projects/easy-2.webp', alt: 'CRM Dashboard' },
@@ -145,15 +122,10 @@ const projects: Project[] = [
     ],
     techStack: [
       'Next.js',
-      'TypeScript',
-      'React',
       'PostgreSQL',
-      'Prisma',
-      'Redis',
-      'AWS',
-      'Stripe',
-      'Docker',
-      'CI/CD',
+      'Resend',
+      'OpenAI SDK',
+      'Twilio'
     ],
     images: [
       { url: '/projects/love-1.webp', alt: 'Landing Page' },
@@ -250,7 +222,7 @@ const FullStackCard: React.FC<{ project: Project }> = ({ project }) => {
 
   return (
     <Card className="overflow-hidden group transform transition-all duration-300 hover:shadow-xl dark:bg-gray-800">
-      <div className="relative h-80">
+      <div className="relative h-52 lg:h-80">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentImageIndex}
@@ -263,16 +235,16 @@ const FullStackCard: React.FC<{ project: Project }> = ({ project }) => {
               src={project.images[currentImageIndex].url}
               alt={project.images[currentImageIndex].alt}
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 668px) 100vw, (max-width: 1200px) 40vw, 33vw"
               className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent" />
           </motion.div>
         </AnimatePresence>
 
         {/* Navigation */}
         <div className="absolute inset-x-0 bottom-0 p-6">
-          <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
+          <h3 className="text-2xl font-bold group-hover:hidden dark:text-white text-slate-800 mb-2">{project.title}</h3>
           <div className="flex gap-2">
             {project.images.map((_, idx) => (
               <button
@@ -289,13 +261,13 @@ const FullStackCard: React.FC<{ project: Project }> = ({ project }) => {
         {/* Carousel Navigation Buttons */}
         <button
           onClick={prevImage}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-20 group-hover:opacity-100 transition-opacity"
         >
           <ChevronLeft className="h-6 w-6" />
         </button>
         <button
           onClick={nextImage}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-50 group-hover:opacity-100 transition-opacity"
         >
           <ChevronRight className="h-6 w-6" />
         </button>

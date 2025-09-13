@@ -92,7 +92,7 @@ const experiences: ExperienceItem[] = [
     location: 'Y Combinator S24 start-up',
     description: [
       'Achieved a personal offer from the CEO to join NextUI after making open-source contributions.',
-      'User Experience Enhancement: Resolved 10+ bugs in essential components like Calendar, Table, and Pagination, leading to direct improvement of the product\'s stability and usability.',
+      'Resolved 10+ bugs in essential components like Calendar, Table, and Pagination, leading to direct improvement of the product\'s stability and usability.',
       'Delivered 7+ feature enhancements that improved component flexibility and extensibility of enterprise-grade reusable UI components.'
     ],
     skills: [
@@ -115,10 +115,10 @@ const experiences: ExperienceItem[] = [
     description: [
       'Engineered the backend application of the enterprise Learning Management System serving 400+ users.',
       'Developed JWT and OAuth 2.0 authentication, securing 400+ user accounts with almost zero breaches.',
-      'Developed a backend service based on MySQL and Django Rest Framework(DRF), handling ~4000 daily queries.'
+      'Developed a backend service based on MySQL and Express.js, handling ~4000 daily queries.'
     ],
     skills: [
-      'Django Rest Framework',
+      'Express.js',
       'MySQL',
       'JWT',
       'OAuth 2.0',
@@ -210,7 +210,7 @@ const TimelineItem: React.FC<{
     >
       {/* Timeline dot */}
       <div className="absolute -left-[5px] top-0 lg:top-8 w-[10px] h-[10px] rounded-full bg-blue-500 z-10">
-        <div className="absolute -inset-2 rounded-full bg-blue-500/20 animate-pulse" />
+        <div className="absolute -inset-2 rounded-full bg-blue-500/30 animate-pulse" />
       </div>
 
       <Card className="transform hover:scale-[1.02] transition-all duration-300 border dark:border-gray-700 lg:max-w-3xl hover:shadow-xl dark:hover:shadow-blue-500/10 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
@@ -224,7 +224,7 @@ const TimelineItem: React.FC<{
                 <span className="font-semibold text-gray-700 dark:text-gray-300">
                   {experience.company}
                 </span>
-                <div className="flex items-center gap-4 mt-2">
+                <div className="flex flex-col md:flex-row md:items-center gap-4 mt-2">
                   <div className="flex items-center gap-2 bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">
                     <Calendar className="w-4 h-4 text-blue-500" />
                     <span className="text-sm text-gray-700 dark:text-gray-300">

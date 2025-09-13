@@ -13,21 +13,8 @@ const SystemStatus = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex items-center space-x-3 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-900/50 px-4 py-2 rounded-full shadow-md"
+      className="flex items-center space-x-3 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-900/50 px-4 py-2 rounded-full shadow-md max-w-60"
     >
-      {/* <motion.div
-        animate={{
-          scale: [1, 1.1, 1],
-          rotate: [0, 5, -5, 0],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          repeatType: 'loop',
-        }}
-      >
-        <FaCheckCircle className="text-green-600 dark:text-green-400 w-5 h-5" />
-      </motion.div> */}
       <div>
         <p className="text-xs font-medium text-green-800 dark:text-green-200">
           All Systems Operational
@@ -63,7 +50,7 @@ const Footer = () => {
     },
     {
       name: 'Twitter',
-      href: 'https://twitter.com/awesome_v0',
+      href: 'https://twitter.com/fierce_fire_',
       icon: <FaTwitter className="w-5 h-5 text-primary" />,
     },
     {
@@ -86,19 +73,17 @@ const Footer = () => {
       <div className="bg-gradient-to-b from-gray-50/50 to-gray-100/50 dark:from-gray-900/50 dark:to-gray-950/50 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           {/* Main footer content */}
-          <div className="py-12 flex flex-col md:flex-row justify-between items-center">
+          <div className="py-12 flex flex-col md:flex-row justify-between lg:items-center">
             {/* Logo and description */}
             <div className="flex flex-col space-y-4">
               <Link href="/">
                 <Image src="/logo.png" alt="Logo" width={220} height={50} className="dark:invert" />
               </Link>
-              <p className="text-sm text-gray-600 dark:text-gray-400 max-w-sm">
-                From Pro to Ultra Pro.
-              </p>
+              
             </div>
 
             {/* System Status and Social Links */}
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-4 mt-4 lg:mt-0">
               {/* System Status */}
               <SystemStatus />
 

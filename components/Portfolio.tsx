@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <section className='my-12 flex items-center justify-center flex-col gap-4'>
 
-    <h2 className='text-3xl font-bold text-blue-600'>
+    <h2 className='text-3xl font-bold text-blue-600 text-center'>
       Loved this Portfolio Template?
     </h2>
   <span className='flex items-center justify-between gap-10'>
