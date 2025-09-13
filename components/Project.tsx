@@ -57,7 +57,6 @@ const projects: Project[] = [
       'Google Cloud',
       'CI/CD',
       'hashing',
-      'Zustand',
       'JWT'
     ],
     images: [
@@ -75,10 +74,8 @@ const projects: Project[] = [
     title: 'UPSCprep - UPSC Exam Preparation Platform',
     type: 'fullstack',
     description: [
-      'Developed a comprehensive UPSC exam preparation platform using Next.js 15, Nest.js 11, Prisma, PostgreSQL, Redis, AWS.',
-      'Automated deployment infrastructure using Docker, GitHub Actions for CICD, and Nginx for reverse proxy/load balancing',
-      'Integrated Razorpay for automated payment processing, enabling seamless subscription payments.',
-      'Implemented real-time notifications using the Firebase Cloud Messaging.'
+      'Developed a full-featured SaaS platform for UPSC aspirants, including features like mock tests, performance analytics, and question banks.',
+      'Integrated Razorpay and marketised the app in the local educational market as a SaaS product, generating ~$300 in revenue.',
     ],
     techStack: [
       'Next.js',
@@ -110,10 +107,8 @@ const projects: Project[] = [
     title: 'EasyMarketplace - The Simplified AWS Marketplace',
     type: 'fullstack',
     description: [
-      'Developed a comprehensive AWS Marketplace using Next.js 15, Nest.js 11, Prisma, PostgreSQL, Redis, AWS.',
-      'Automated deployment infrastructure using Docker, GitHub Actions for CICD, and Nginx for reverse proxy/load balancing',
-      'Implemented real-time notifications using the Firebase Cloud Messaging.'
-
+      'Addressed the complexity of the AWS Marketplace by building a streamlined management tool, reducing the time to manage listings for ISVs',
+      'Achieved early traction with 50+ unique user sign-ups and generated 20+ resale authorisations, validating product-market fit.'
     ],
     techStack: [
       'Next.js',
@@ -145,10 +140,8 @@ const projects: Project[] = [
     title: 'myproposal.love - The AI Proposal Generator',
     type: 'fullstack',
     description: [
-      'Designed and implemented an AI-powered romantic proposal generator',
-      'Integrated Amazon SES & Resend for email notifications',
-      'Built secure authentication system with NextAuth.js adding Google and Email authentication',
-      'Implemented caching strategy reducing response time by 60%',
+      'Built a robust, multi-channel delivery pipeline using AWS SES for email and Twilio for WhatsApp, achieving a >98% delivery success rate.',
+      'Achieved early traction with 400+ unique user sign-ups and generated 100+ personalised proposals, validating product-market fit.'
     ],
     techStack: [
       'Next.js',
@@ -176,8 +169,6 @@ const projects: Project[] = [
     description: [
       'Developed a Image to Sketch Converter using Next.js, FastAPI, OpenCV, Numpy, and AWS S3',
       'Integrated boto3 for AWS S3 AES-256 encryption secured file upload and download',
-      'Setup CI/CD pipeline using Google Cloud Run & Docker for automated containerization',
-      'Implemented Error-handling mechanisms for API endpoints',
       'Enginnerred the BackgroudTasks from FastAPI for image to sketch conversion to process the images in the background',
     ],
     techStack: [
@@ -199,28 +190,6 @@ const projects: Project[] = [
     apiEndPointLink: 'https://sketchbackend.abhinandan.pro/docs',
     previewLink: 'https://imagetosketch.abhinandan.pro',
     highlights: [ ],
-  },
-
-  {
-    title: 'SuperFastAPI - Ship fast with FastAPI',
-    type: 'fullstack',
-    description: [
-      'Developed a FastAPI framework for FastAPI to ship fast with FastAPI',
-      'Reducing the time to setup the FastAPI prpject from scratch, making it easier to ship fast with FastAPI',
-      
-    ],
-    techStack: [
-      'Next.js',
-      'FastAPI',
-      'SQLAlchemy',
-      'Celery',
-    ],
-    images: [
-      { url: '/projects/super-0.webp', alt: 'SuperFastAPI Dashboard' },
-    ],
-    githubLink: 'https://github.com/awesome-pro/superfastapi-frontend',
-    previewLink: 'https://superfastapi.abhinandan.pro',
-    highlights: ['99.9% Uptime', '50ms Average Response Time', '10k+ Daily Active Users'],
   },
 ];
 

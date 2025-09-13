@@ -2,12 +2,9 @@
 
 import React, { useRef, useEffect, useMemo } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
-import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 
-import { Calendar, MapPin, ExternalLink, Cloud } from 'lucide-react';
-import Image from 'next/image';
+import { Calendar, MapPin } from 'lucide-react';
 
 interface ExperienceItem {
   position: string;
@@ -27,21 +24,16 @@ const experiences: ExperienceItem[] = [
     period: 'Jan 2025 – July 2025',
     location: 'Noida, India',
     description: [
-      'Collaborated to develop core features of an AI-powered real estate ecosystem using Next.js, Nest.js, Prisma, PostgreSQL, Apollo GraphQL, Redis, Google Cloud & AWS.',
+      'Collaborated to develop core features of an AI-powered real estate ecosystem using Next.js, Nest.js, Prisma, GraphQL & Google Cloud',
       'As part of a 4-person team, developed core features that helped acquire 20 clients in 2 months, contributing to ₹100K in new MRR.',
-      'Partnered to implement the AI knowledge base service, using FastAPI, Langchain & OpenAI.',
+      'Partnered to implement the AI knowledge base service, using FastAPI & Langchain.',
       'Fortified with enterprise-grade RBAC authentication using JWT and HTTP-only cookies.',
       'Automated deployment infrastructure using Docker, GitHub Actions for CI/CD, and Nginx for reverse proxy/load balancing.',
-      'Engineered WhatsApp, Meta & Google Ads with DeepSeek AI to auto-optimise ad campaigns.',
       'Implemented Google Cloud Vision API, XLSX & BullMQ to help users seed their client database in the app by scanning their contact diaries with their smartphone camera or using the Microsoft Excel import.',
       'Integrated Razorpay for automated payment processing, achieving a high (>95%) transaction success rate.',
-      'Implemented real-time notifications using GraphQL subscriptions (WebSockets), PubSub & Firebase Cloud Messaging.',
+      'Implemented real-time notifications using GraphQL subscriptions (WebSockets), PubSub(Redis) & Firebase Cloud Messaging.',
       'Engineered secure AWS S3 file uploads using multi-part uploads to reliably handle large files (up to 5GB), ensuring data integrity.',
-      'Integrated AWS SES and Resend for transactional emails and targeted marketing campaigns, improving delivery rates by 15%.',
-      'Implemented Incremental Site Regeneration with on-demand rendering & dynamic caching, achieving 221ms load time.',
-      'Reduced Largest Contentful Paint (LCP) from 2.4s to 0.9s using Next.js streaming SSR & Edge Runtime.',
-      'Integrated Turbopack for faster local dev builds, cutting hot reload time by 40%.'
-
+      'Integrated AWS SES and BullMQ for transactional emails and targeted marketing campaigns, improving delivery rates by 15%.',
     ],
     skills: [
       'Next.js',
@@ -77,8 +69,6 @@ const experiences: ExperienceItem[] = [
       'Optimised data processing via bulk CSV upload & processing using Celery worker, reducing processing time by 40%.',
       'Established a CI/CD pipeline with GitHub Actions and Docker on an AWS EC2 machine.',
       'Collaborated to build a LangChain and pgvector knowledge base, improving ML model query accuracy by 15%.',
-      'Led Progressive Web App (PWA) transformation, enabling offline-first usage and cross-platform support, improving adoption.',
-      'Championed responsive design and accessibility improvements, achieving WCAG 2.1 compliance and 98 Lighthouse score.',
       'Executed strategic SEO optimisations like JSON-LD schema markup data, Open Graph tags, and dynamic meta tags.'
     ],
     skills: [
@@ -101,7 +91,7 @@ const experiences: ExperienceItem[] = [
     period: 'June 2024 – Aug 2024',
     location: 'Y Combinator S24 start-up',
     description: [
-      'Achieved a personal offer from the CEO to join NextUI after making significant contributions (35 pull requests).',
+      'Achieved a personal offer from the CEO to join NextUI after making open-source contributions.',
       'User Experience Enhancement: Resolved 10+ bugs in essential components like Calendar, Table, and Pagination, leading to direct improvement of the product\'s stability and usability.',
       'Delivered 7+ feature enhancements that improved component flexibility and extensibility of enterprise-grade reusable UI components.'
     ],
