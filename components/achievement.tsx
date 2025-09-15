@@ -13,7 +13,7 @@ const Achievements = () => {
       description: "Recognized among the elite 1% of TypeScript engineers worldwide for technical skills in and contributions to the developer community.",
       badge: "Global Elite",
       image: '/top1.webp',
-      link: 'https://algora.io/profile/awesome-pro',
+      link: 'https://abhinandan.pro/algora.png',
     },
     {
       icon: GitBranch,
