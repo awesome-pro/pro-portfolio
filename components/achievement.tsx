@@ -13,7 +13,7 @@ const Achievements = () => {
       description: "Recognised among the elite 1% of TypeScript engineers worldwide for technical skills in and contributions to the developer community.",
       badge: "Global Elite",
       image: '/top1.webp',
-      link: 'https://abhinandan.pro/images/algora.png',
+      link: 'https://i.postimg.cc/vHdH4MyH/algora.png',
     },
     {
       icon: GitBranch,
@@ -21,7 +21,7 @@ const Achievements = () => {
       subtitle: "YC-Backed Startup",
       description: "Received a personal offer from the CEO of a Y Combinator-backed startup, for open-source contributions.",
       badge: "Executive Recognition",
-      image: '/yc.webp',
+      image: '/images/yc.webp',
       link: 'https://i.postimg.cc/x16VXRx3/offer-message.png',
     }
   ];
