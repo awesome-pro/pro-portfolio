@@ -19,6 +19,17 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    position: 'Founding Software Engineer',
+    company: 'Browzer',
+    period: 'Oct 2025 – Present',
+    location: 'New York, USA',
+    description: [
+    ],
+    skills: [
+    ],
+    images: ['/placeholder.svg?height=300&width=400', '/placeholder.svg?height=300&width=400'],
+  },
+  {
     position: 'Software Engineer (Part-time)',
     company: 'Cynos Nexus',
     period: 'Jan 2025 – July 2025',
@@ -242,90 +253,6 @@ const TimelineItem: React.FC<{
             </div>
           </div>
         </CardHeader>
-
-        <CardContent>
-          <div className="space-y-6">
-            <div>
-              <h4 className="font-semibold mb-3 text-gray-800 dark:text-gray-200">
-                Key Achievements:
-              </h4>
-              <ul className="space-y-2">
-                {experience.description.map((item, i) => {
-                  // Enhanced regex patterns for different categories
-                  const metrics = item.replace(
-                    /(\d+(?:\.\d+)?[%+]?|\$\d+(?:\.\d+)?[MK]?\+?|\d+,\d+\+?)/g,
-                    '<span class="font-bold text-blue-600 dark:text-blue-400">$1</span>'
-                  );
-
-                  // Highlight technical skills using ALL technical skills from all experiences
-                  const technicalTerms = allTechnicalSkills.join('|');
-                  const withTechHighlights = metrics.replace(
-                    new RegExp(`(${technicalTerms})`, 'gi'),
-                    '<span class="font-medium text-emerald-600 dark:text-emerald-400">$1</span>'
-                  );
-
-                  // Highlight impact keywords and action verbs
-                  const impactKeywords = [
-                    'Collaborated',
-                    'Executed',
-                    'Integrated',
-                    'Maximized',
-                    'Optimised',
-                    'Containerized',
-                    'Architected',
-                    'Engineered',
-                    'Spearheaded',
-                    'Pioneered',
-                    'Implemented',
-                    'Optimized',
-                    'Revolutionized',
-                    'Innovated',
-                    'Championed',
-                   
-                    'Orchestrated',
-                    'Developed',
-                    'Designed',
-                    'Created',
-                    'Delivered',
-                    'Achieved',
-                    'Improved',
-                    'Enhanced',
-                    'Reduced',
-                    'Increased',
-                    'Streamlined',
-                    'Automated',
-                    'Secured',
-                    'Resolved',
-                    'Contributed',
-                  ].join('|');
-
-                  const finalText = withTechHighlights.replace(
-                    new RegExp(`(${impactKeywords})`, 'gi'),
-                    '<span class="font-semibold text-purple-600 dark:text-purple-400">$1</span>'
-                  );
-
-                  return (
-                    <motion.li
-                      key={i}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: i * 0.1 }}
-                      className="flex items-start group"
-                    >
-                      <span className="mr-2 text-blue-500 transform group-hover:scale-125 transition-transform">
-                        •
-                      </span>
-                      <span
-                        className="text-gray-700 dark:text-gray-300"
-                        dangerouslySetInnerHTML={{ __html: finalText }}
-                      />
-                    </motion.li>
-                  );
-                })}
-              </ul>
-            </div>
-          </div>
-        </CardContent>
       </Card>
     </motion.div>
   );
