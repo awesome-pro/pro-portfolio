@@ -10,7 +10,7 @@ Disallow: /api/
 Disallow: /_next/
 
 # Sitemaps
-Sitemap: https://abhinandan.pro/sitemap.xml
+Sitemap: https://abhinandan.one/sitemap.xml
 
 # Additional directives for major search engines
 User-agent: Googlebot

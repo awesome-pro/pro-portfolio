@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://abhinandan.pro';
+  const baseUrl = 'https://abhinandan.one';
   const lastModified = new Date();
 
   // Define all your routes with their priorities

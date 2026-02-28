@@ -136,7 +136,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Feel free to reach out if you have any questions or would like to connect!
 
-- **Email**: abhinandan@abhinandan.pro
+- **Email**: abhinandan@abhinandan.one
 - **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/abhinandan-verma)
 - **GitHub**: [Your GitHub](https://github.com/awesome-pro)
 - **Twitter**: [Your Twitter](https://twitter.com/fierce_fire_)

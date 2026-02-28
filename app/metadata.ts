@@ -5,7 +5,7 @@ const description =
   'Niche Expert Engineer specializing in Next.js, FastAPI, Kubernetes, and Cloud Infrastructure. Expert in building scalable web applications and microservices architecture.';
 
 export const sharedMetadata: Metadata = {
-  metadataBase: new URL('https://abhinandan.pro'),
+  metadataBase: new URL('https://abhinandan.one'),
   title: {
     default: title,
     template: `%s | ${title}`,
@@ -36,7 +36,7 @@ export const sharedMetadata: Metadata = {
     'Solana Blockchain',
     'Solana Protocol',
   ],
-  authors: [{ name: 'Abhinandan', url: 'https://abhinandan.pro' }],
+  authors: [{ name: 'Abhinandan', url: 'https://abhinandan.one' }],
   creator: 'Abhinandan',
   publisher: 'Abhinandan',
   formatDetection: {
@@ -45,18 +45,18 @@ export const sharedMetadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: 'https://abhinandan.pro',
+    canonical: 'https://abhinandan.one',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://abhinandan.pro',
+    url: 'https://abhinandan.one',
     title,
     description,
     siteName: title,
     images: [
       {
-        url: 'https://abhinandan.pro/1200x630.png',
+        url: 'https://abhinandan.one/1200x630.png',
         width: 1200,
         height: 630,
         alt: title,
@@ -68,7 +68,7 @@ export const sharedMetadata: Metadata = {
     title,
     description,
     creator: '@awesome_v0',
-    images: ['https://abhinandan.pro/1200x630.png'],
+    images: ['https://abhinandan.one/1200x630.png'],
   },
   robots: {
     index: true,

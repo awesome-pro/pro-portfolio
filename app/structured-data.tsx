@@ -3,8 +3,8 @@ export default function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Abhinandan',
-    url: 'https://abhinandan.pro',
-    image: 'https://abhinandan.pro/p-6.jpg',
+    url: 'https://abhinandan.one',
+    image: 'https://abhinandan.one/p-6.jpg',
     sameAs: [
       'https://github.com/awesome-pro',
       'https://linkedin.com/in/abhinandan-verma',

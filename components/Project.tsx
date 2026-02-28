@@ -55,8 +55,8 @@ const projects: Project[] = [
     ],
     githubLink: 'https://github.com/awesome-pro/url-shortener-frontend',
     backendLink: 'https://github.com/awesome-pro/url-shortener-backend',
-    apiEndPointLink: 'https://shorturl.abhinandan.pro/docs',
-    previewLink: 'https://shortenurl.abhinandan.pro',
+    apiEndPointLink: 'https://shorturl.abhinandan.one/docs',
+    previewLink: 'https://shortenurl.abhinandan.one',
     highlights: ['Custom URL shortening', '50ms Average Response Time'],
   },
   {
@@ -84,8 +84,8 @@ const projects: Project[] = [
     ],
     githubLink: 'https://github.com/awesome-pro/upscprep-next-frontend',
     backendLink: 'https://github.com/awesome-pro/upscprep-next-backend',
-    apiEndPointLink: 'https://prepbackend.abhinandan.pro/api/docs',
-    previewLink: 'https://upscprep.abhinandan.pro',
+    apiEndPointLink: 'https://prepbackend.abhinandan.one/api/docs',
+    previewLink: 'https://upscprep.abhinandan.one',
     highlights: ['99.9% Uptime', '50ms Average Response Time'],
   },
   {
@@ -109,8 +109,8 @@ const projects: Project[] = [
     ],
     githubLink: 'https://github.com/awesome-pro/easy-marketplace-frontend',
     backendLink: 'https://github.com/awesome-pro/easy-marketplace-backend',
-    apiEndPointLink: 'https://easybackend.abhinandan.pro/api/docs',
-    previewLink: 'https://easymarketplace.abhinandan.pro',
+    apiEndPointLink: 'https://easybackend.abhinandan.one/api/docs',
+    previewLink: 'https://easymarketplace.abhinandan.one',
     highlights: ['99.9% Uptime', '50ms Average Response Time'],
   },
   {
@@ -159,8 +159,8 @@ const projects: Project[] = [
     ],
     githubLink: 'https://github.com/awesome-pro/imagetosketch-next-frontend',
     backendLink: 'https://github.com/awesome-pro/imagetosketch-fastapi-backend',
-    apiEndPointLink: 'https://sketchbackend.abhinandan.pro/docs',
-    previewLink: 'https://imagetosketch.abhinandan.pro',
+    apiEndPointLink: 'https://sketchbackend.abhinandan.one/docs',
+    previewLink: 'https://imagetosketch.abhinandan.one',
     highlights: [ ],
   },
 ];

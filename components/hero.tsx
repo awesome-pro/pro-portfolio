@@ -121,7 +121,7 @@ const Hero = () => {
                 asChild
               >
                 <Link
-                  href="https://shorturl.abhinandan.pro/resume?ref=abhinandanpro"
+                  href="https://shorturl.abhinandan.one/resume?ref=abhinandanpro"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"

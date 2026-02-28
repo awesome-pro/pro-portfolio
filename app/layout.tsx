@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://abhinandan.pro'),
+  metadataBase: new URL('https://abhinandan.one'),
   title: {
     default: 'Abhinandan | Machine Learning Engineer',
     template: '%s | Abhinandan - Machine Learning Engineer',
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
     'Independent Consultant',
   ],
   alternates: {
-    canonical: 'https://abhinandan.pro',
+    canonical: 'https://abhinandan.one',
   },
-  authors: [{ name: 'Abhinandan', url: 'https://abhinandan.pro' }],
+  authors: [{ name: 'Abhinandan', url: 'https://abhinandan.one' }],
   creator: 'Abhinandan',
   publisher: 'Abhinandan',
   formatDetection: {
@@ -78,21 +78,21 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://abhinandan.pro',
+    url: 'https://abhinandan.one',
     title: 'Abhinandan - Machine Learning Engineer & Enterpreneur',
     description:
       'Expert Full Stack Engineer specializing in Next.js, FastAPI, and enterprise solutions. Building scalable, high-performance web applications and providing technical leadership.',
     siteName: 'Abhinandan Portfolio',
     images: [
       {
-        url: 'https://abhinandan.pro/1200x630.png',
+        url: 'https://abhinandan.one/1200x630.png',
         width: 1200,
         height: 630,
         alt: 'Abhinandan - Enterpreneur & ML Engineer',
         type: 'image/png',
       },
       {
-        url: 'https://abhinandan.pro/1080.png',
+        url: 'https://abhinandan.one/1080.png',
         width: 1080,
         height: 1080,
         alt: 'Abhinandan - Enterpreneur & ML Engineer',
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     creator: '@awesome_v0',
     images: [
       {
-        url: 'https://abhinandan.pro/1200x630.png',
+        url: 'https://abhinandan.one/1200x630.png',
         width: 1200,
         height: 630,
         alt: 'Abhinandan - Enterpreneur & ML Engineer',

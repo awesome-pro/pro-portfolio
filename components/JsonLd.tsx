@@ -6,7 +6,7 @@ export const JsonLd = () => {
     '@type': 'Person',
     name: 'Abhinandan',
     jobTitle: 'Niche Expert Engineer',
-    url: 'https://abhinandan.pro',
+    url: 'https://abhinandan.one',
     sameAs: [
       'https://github.com/awesome-pro', // Replace with your actual profiles
       'https://linkedin.com/in/abhinandan-verma',

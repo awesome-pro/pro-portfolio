@@ -55,7 +55,7 @@ const Footer = () => {
     },
     {
       name: 'Email',
-      href: 'mailto:abhinadnan@abhinandan.pro',
+      href: 'mailto:abhinadnan@abhinandan.one',
       icon: <FaEnvelope className="w-5 h-5 text-primary" />,
     },
     {
