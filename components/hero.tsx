@@ -3,16 +3,14 @@
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
 const Hero = () => {
   return (
     <section
-      className="relative min-h-[98vh] flex items-center justify-center overflow-hidden bg-linear-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950"
+      className="relative min-h-[98vh] flex items-center justify-center overflow-hidden bg-linear-to-b from-white to-slate-100 dark:from-gray-900 dark:to-gray-950"
       id="hero"
     >
-      {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(59,130,246,0.1),transparent)]" />
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center mask-[radial-gradient(white,transparent_85%)] dark:opacity-20" />
@@ -20,24 +18,12 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 py-8 md:py-16 relative z-10 mt-10 md:mt-0">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          {/* Left Column - Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
             className="space-y-6 md:space-y-8 text-center lg:text-left pt-8 md:pt-0"
           >
-            {/* Leadership Statement */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="inline-block"
-            >
-              <span className="inline-flex px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-medium backdrop-blur-sm">
+           <span className="inline-flex px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-medium backdrop-blur-sm">
                 Engineer & Enterpreneur
-              </span>
-            </motion.div>
+            </span>
 
             {/* Main Headline */}
             <div className="space-y-4">
@@ -53,71 +39,42 @@ const Hero = () => {
                 </span>
               </motion.h1>
 
-              <motion.p
+              <p
                 className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
               >
-                Transforming ideas into enterprise-grade solutions with modern tech stacks.
-              </motion.p>
+                Implementing the solutions that help you automate your browser
+              </p>
             </div>
 
             {/* CTA Section */}
-            <motion.div
-              className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6 pt-8"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
+            <div
+              className="flex flex-col md:flex-row items-center gap-4 pt-8"
             >
               <Button
-                className="group bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 
-                hover:to-blue-900 text-white px-6 md:px-8 py-4 md:py-6 backdrop-blur-sm rounded-full"
-                onClick={() =>
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-                }
-              >
-                <span className="flex items-center">
-                  Let&apos;s Have a Talk
-                  <motion.span
-                    className="ml-2"
-                    initial={{ x: 0 }}
-                    whileHover={{ x: 5 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                  >
-                    <ArrowRight className="w-5 h-5" />
-                  </motion.span>
-                </span>
-                <div
-                  className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 
-                transition-opacity duration-300"
-                />
-              </Button>
-
-              <Button
-                variant="outline"
-                className="group border-2 border-blue-600 dark:border-blue-400 hover:bg-blue-50 
-                dark:hover:bg-blue-900/20 px-6 md:px-8 py-4 md:py-6 backdrop-blur-sm rounded-full"
+                className='rounded-full w-full md:w-1/3 h-11'
                 asChild
               >
-                <Link
-                  href="https://shorturl.abhinandan.one/resume?ref=abhinandanpro"
+               <Link
+                  href="https://cal.com/abhinandan07/15min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"
                 >
-                  Check My Resume
-                  <motion.span
-                    className="ml-2"
-                    whileHover={{ rotate: 45 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                  >
-                    <ExternalLink className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                  </motion.span>
+                  Let&apos;s Talk
                 </Link>
               </Button>
-            </motion.div>
-          </motion.div>
+
+              <Button
+                variant="outline"
+                className='rounded-full w-full md:w-1/3 h-11'
+                onClick={() => {
+                  document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                  Explore More
+              </Button>
+            </div>
+          </div>
 
           {/* Right Column - Profile Image & Project Showcase */}
           <motion.div
@@ -129,8 +86,7 @@ const Hero = () => {
             <div className="relative aspect-square max-w-sm md:max-w-md mx-auto">
               {/* Main Profile Image */}
               <div
-                className="relative z-10 rounded-3xl overflow-hidden shadow-2xl 
-                before:absolute before:inset-0 before:bg-blue-500/10 before:z-10 group transition-transform duration-300"
+                className="relative z-10 rounded-3xl overflow-hidden shadow-2xl "
               >
                 <Image
                   src="/p-7.jpg"

@@ -157,8 +157,6 @@ const NavLinks = ({ mobile, onClick }: { mobile?: boolean; onClick?: () => void 
   const links = [
     { href: '#hero', label: 'About' },
     { href: '#experience', label: 'Experience' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#skills', label: 'Skills' },
     { href: '#contact', label: 'Contact' },
   ];
 
