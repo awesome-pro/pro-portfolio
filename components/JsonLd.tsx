@@ -10,7 +10,7 @@ export const JsonLd = () => {
     sameAs: [
       'https://github.com/awesome-pro', // Replace with your actual profiles
       'https://linkedin.com/in/abhinandan-verma',
-      'https://twitter.com/awesome_v0',
+      'https://x.com/abhinandan07',
     ],
     knowsAbout: [
       'Next.js',

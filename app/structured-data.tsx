@@ -8,7 +8,7 @@ export default function StructuredData() {
     sameAs: [
       'https://github.com/awesome-pro',
       'https://linkedin.com/in/abhinandan-verma',
-      'https://twitter.com/awesome_v0',
+      'https://x.com/abhinandan07',
       'mailto:abhinadnanverma551@gmail.com',
     ],
     jobTitle: ['Senior Software Engineer', 'Machine Learning Engineer', 'Technical Architect'],
