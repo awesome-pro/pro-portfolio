@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaCheckCircle, FaYoutube } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';

@@ -13,10 +13,9 @@ export default function Home() {
       <Hero />
       <Achievements />
       <Experience />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
       <SkillsSection />
       <Contact />
-      <Portfolio />
     </main>
   );
 }

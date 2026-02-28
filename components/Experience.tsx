@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useRef, useEffect, useMemo } from 'react';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { motion, useAnimation, useInView } from 'motion/react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 import { Calendar, MapPin } from 'lucide-react';

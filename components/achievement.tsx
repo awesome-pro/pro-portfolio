@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, GitBranch, Trophy, Star, Crown, ChevronRight, ArrowRight } from 'lucide-react';
+import { GitBranch, Trophy, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { Badge } from './ui/badge';
 import Link from 'next/link';

@@ -1,41 +1,21 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import Image from 'next/image';
-import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
-const StyledButton = ({ children, className, ...props }: any) => (
-  <Button
-    size="lg"
-    className={`w-full md:w-auto  relative overflow-hidden transform transition-all duration-300 hover:scale-105 
-    active:scale-95 shadow-lg hover:shadow-xl ${className}`}
-    {...props}
-  >
-    {children}
-  </Button>
-);
-
 const Hero = () => {
-  const { theme } = useTheme();
-  const [profileImage, setProfileImage] = useState('/p-7.jpg');
-
-  useEffect(() => {
-    setProfileImage(theme === 'dark' ? '/p-7.jpg' : '/p-7.jpg');
-  }, [theme]);
-
   return (
     <section
-      className="relative min-h-[98vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950"
+      className="relative min-h-[98vh] flex items-center justify-center overflow-hidden bg-linear-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950"
       id="hero"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(59,130,246,0.1),transparent)]" />
-        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:radial-gradient(white,transparent_85%)] dark:opacity-20" />
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center mask-[radial-gradient(white,transparent_85%)] dark:opacity-20" />
       </div>
 
       <div className="container mx-auto px-4 py-8 md:py-16 relative z-10 mt-10 md:mt-0">
@@ -55,14 +35,14 @@ const Hero = () => {
               className="inline-block"
             >
               <span className="inline-flex px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-medium backdrop-blur-sm">
-                Enterpreneur & Tech Leader
+                Engineer & Enterpreneur
               </span>
             </motion.div>
 
             {/* Main Headline */}
             <div className="space-y-4">
               <motion.h1
-                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
@@ -90,7 +70,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              <StyledButton
+              <Button
                 className="group bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 
                 hover:to-blue-900 text-white px-6 md:px-8 py-4 md:py-6 backdrop-blur-sm rounded-full"
                 onClick={() =>
@@ -112,9 +92,9 @@ const Hero = () => {
                   className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 
                 transition-opacity duration-300"
                 />
-              </StyledButton>
+              </Button>
 
-              <StyledButton
+              <Button
                 variant="outline"
                 className="group border-2 border-blue-600 dark:border-blue-400 hover:bg-blue-50 
                 dark:hover:bg-blue-900/20 px-6 md:px-8 py-4 md:py-6 backdrop-blur-sm rounded-full"
@@ -135,7 +115,7 @@ const Hero = () => {
                     <ExternalLink className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                   </motion.span>
                 </Link>
-              </StyledButton>
+              </Button>
             </motion.div>
           </motion.div>
 
@@ -153,7 +133,7 @@ const Hero = () => {
                 before:absolute before:inset-0 before:bg-blue-500/10 before:z-10 group transition-transform duration-300"
               >
                 <Image
-                  src={profileImage}
+                  src="/p-7.jpg"
                   alt="Your Name"
                   width={500}
                   height={500}
