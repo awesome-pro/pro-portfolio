@@ -1,3 +1,5 @@
+
+
 # Professional Portfolio
 
 ![Portfolio Banner](/public/p-10.png)
@@ -18,7 +20,7 @@ A modern, responsive, and interactive professional portfolio built with cutting-
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **Framework**: [Next.js 15](https://nextjs.org/) with React 19
+- **Framework**: [Next.js 16](https://nextjs.org/) with React 19
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) with custom animations
 - **UI Components**: Custom components built with [Radix UI](https://www.radix-ui.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
